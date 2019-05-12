@@ -9,7 +9,7 @@ token = f.read()
 f.seek(0)
 f.close()
 
-f = open('lastgame.txt', 'r')
+f = open('game.txt', 'r')
 lastgame = f.read()
 f.seek(0)
 f.close()
