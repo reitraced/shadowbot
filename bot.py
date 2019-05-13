@@ -24,16 +24,20 @@ async def ping(ctx):
     await ctx.send('Pong!')
 
 @client.command(pass_context=True, brief='Define Linux/UNIX terminology', description='Define terms. Ex. `shadowbot define linux` Please use lowercase I am offended by capital latters.')
-async def define(ctx, arg):
-    if not arg:
-        await ctx.send('You need to give me terms to define')
-    else:
+async def define(ctx, arg = None):
+    if arg:
         f = open(arg + '.txt', 'r')
         answer = f.read()
         f.seek(0)
         f.close()
 
         await ctx.send("The definition of " + arg + " is: " + answer)
+    else:
+        await ctx.send('You need to give me terms to define')
 
+@define.error
+async def define_error(ctx, error):
+    #if isinstance(error, discord.ext.commands.BadArgument):
+        await ctx.send('Could not recognize term')
 
 client.run(token)
