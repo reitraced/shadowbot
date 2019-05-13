@@ -1,0 +1,1 @@
+DNF or DaNdiFied yum is a newer and nicer looking version of the yum package manager. That's about it. Used on Red Hat Enterprise Linux 8 and Fedora.
