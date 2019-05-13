@@ -37,7 +37,6 @@ async def define(ctx, arg = None):
 
 @define.error
 async def define_error(ctx, error):
-    #if isinstance(error, discord.ext.commands.BadArgument):
         await ctx.send('Could not recognize term')
 
 client.run(token)
