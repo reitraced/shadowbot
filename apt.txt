@@ -1,1 +1,1 @@
-The Advanced Packaging Tool, used on Debian and Debian based distros such as Ubuntu. APT is used to install new software.
+The Advanced Packaging Tool, used on Debian and Debian based distros such as Ubuntu to install new software.
