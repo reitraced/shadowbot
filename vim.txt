@@ -1,0 +1,1 @@
+Vim (Vi IMproved) is a text editor. It is the standard for many UNIX users. It is seen as complex to a lot of people, which it is, but it is preferred by many. Is an expanded clone of VI.

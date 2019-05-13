@@ -23,23 +23,17 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send('Pong!')
 
-@client.command(pass_context=True, brief='Define Linux/UNIX terminology', description='Define terms, make sure to use commas to separate them. Ex. `shadowbot define linux, kernel`')
+@client.command(pass_context=True, brief='Define Linux/UNIX terminology', description='Define terms. Ex. `shadowbot define linux` Please use lowercase I am offended by capital latters.')
 async def define(ctx, arg):
     if not arg:
         await ctx.send('You need to give me terms to define')
     else:
-        terms = {
-            "vim": "A common UNIX text editor. VI iMproved",
-            "emacs": "A common UNIX text editor with an extensive scripting language called Lisp. Many variants with the most popular being GNU Emacs",
-            "linux": "A family of computer operating systems using the Linux kernel.",
-            "kernel": "The core of an operating system. Handles all inputs and outputs",
-            "unix": "A standard for operating systems. Formerly one operating system that has since split. Here is a nice flow chart illustrating this split: https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg"
-            "vi": "A text editor used on most older UNIX systems. Mostly replaced by Vim",
-            "GNU": "The GNU Project is one of the largest FOSS projects in existence. It's software makes up the core of most Linux  operating systems"
-        }
+        f = open(arg + '.txt', 'r')
+        answer = f.read()
+        f.seek(0)
+        f.close()
 
-        answer = terms.get(arg)
-        await ctx.send("The definition of " + arg + "is " + answer )
+        await ctx.send("The definition of " + arg + " is: " + answer)
 
 
 client.run(token)

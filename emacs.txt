@@ -1,0 +1,1 @@
+Emacs is the text editor for people who want their text editor to replace their entire operating system. It can be customized very extensively and has a scripting language known as Lisp. Some people prefer it over Vim and I know I'm not supposed to give my opinion but I think they're crazy.

@@ -1,0 +1,1 @@
+Nano is a very simple command line text editor. It is usually preferred for quickly editing files but can be expanded quite considerably (although not as much as Vim or Emacs.) Nano comes preinstalled on most major linux distributions.
