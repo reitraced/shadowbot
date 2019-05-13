@@ -31,10 +31,10 @@ async def define(ctx, arg = None):
         f.seek(0)
         f.close()
 
-        if answer is 'red':
+        if arg == 'red':
             await ctx.send("The definition of Red Hat is: " + answer)
-
-        await ctx.send("The definition of " + arg + " is: " + answer)
+        else:
+            await ctx.send("The definition of " + arg + " is: " + answer)
     else:
         await ctx.send('You need to give me terms to define')
 
