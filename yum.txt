@@ -1,1 +1,1 @@
-The Yellow dog Update Manager, once the default package manager on all Red Hat based systems. Now replaced by dnf. Yellow Dog doesnt even exist anymore fun fact.
+The Yellow dog Update Manager, once the default package manager on all Red Hat based systems. Now (mostly) replaced by dnf. Yellow Dog doesnt even exist anymore fun fact.
