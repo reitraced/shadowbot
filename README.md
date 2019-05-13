@@ -8,4 +8,4 @@ It is recommended to run on a Linux based system for accuracy but it can run on 
 
 The bot's sole command which isn't yet implemented is `shadowbot define [TERMS]` which will make the bot define the terms you put in.
 
-This bot is still a work in progress so maybe check back later and we'll have it working.
+This bot is still a work in progress so maybe check back later and we'll have it working a bit better.
