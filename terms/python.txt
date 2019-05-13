@@ -1,1 +1,1 @@
-Python is a popular programming language that is fairly easy to pick up and has many uses. It is often called the "jack of all trades, master of none" of programming. This bot was made using Pyython and the Discord.py API
+Python is a popular programming language that is fairly easy to pick up and has many uses. It is often called the "jack of all trades, master of none" of programming. This bot was made using Python and the Discord.py API
