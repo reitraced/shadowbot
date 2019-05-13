@@ -21,7 +21,7 @@ async def on_ready():
 
 @client.command()
 async def ping(ctx):
-    await ctx.send('Pong! {0}'.format(round(client.latency, 4)))
+    await ctx.send('Pong! {0}'.format(round(client.latency, 4)*1000) + ' ms')
 
 @client.command(pass_context=True, brief='Define Linux/UNIX terminology', description='Define terms. Ex. `shadowbot define linux` Please use lowercase I am offended by capital latters.')
 async def define(ctx, arg = None):
