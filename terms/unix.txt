@@ -1,0 +1,1 @@
+A standard for operating systems. Formerly one operating system that has since split. Here is a nice flow chart illustrating this split: https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg
