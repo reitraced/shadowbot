@@ -26,7 +26,7 @@ async def ping(ctx):
 @client.command(pass_context=True, brief='Define Linux/UNIX terminology', description='Define terms. Ex. `shadowbot define linux` Please use lowercase I am offended by capital latters.')
 async def define(ctx, arg = None):
     if arg:
-        f = open(arg + '.txt', 'r')
+        f = open('terms/' + arg + '.txt', 'r')
         answer = f.read()
         f.seek(0)
         f.close()
