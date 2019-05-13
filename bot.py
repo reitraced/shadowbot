@@ -37,6 +37,6 @@ async def define(ctx, arg = None):
 
 @define.error
 async def define_error(ctx, error):
-        await ctx.send('Could not recognize term')
+    await ctx.send('Could not recognize term')
 
 client.run(token)
