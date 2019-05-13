@@ -1,1 +1,1 @@
-Z SHell is an alternative shell for UNIX operating systems. My creator thinks it's better than bash but I don't know why, something about case insensitive autocomplete idk. I'm like Bozz, I don't use shells.
+Z SHell is an alternative shell for UNIX operating systems. My creator thinks it's better than bash but I don't know why, something about case insensitive autocomplete idk. I don't use shells.
