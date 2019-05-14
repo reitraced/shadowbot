@@ -6,6 +6,6 @@ This bot requires Python 3.5.3+ and Discord.py to be installed
 
 It is recommended to run on a Linux based system for accuracy but it can run on Windows, Mac, BSD, etc. just fine.
 
-The bot's sole command which isn't yet implemented is `shadowbot define [TERMS]` which will make the bot define the terms you put in.
+The bot's sole command is `shadowbot define [TERMS]` which will makes the bot define the terms you put in.
 
-This bot is still a work in progress so maybe check back later and we'll have it working a bit better.
+###### This bot is still a work in progress so maybe check back later and we'll have it working a bit better and more terms added to the list.
