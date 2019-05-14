@@ -1,0 +1,1 @@
+The primary desktop Linux distribution. While this bot may be hosted on Red Hat Enterprise it actually is primarily worked on using Ubuntu because I'm not one of those insane people who use enterprise distros on their main PCs. At least not anymore.
