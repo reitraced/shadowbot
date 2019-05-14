@@ -34,12 +34,12 @@ async def ping(ctx):
 @client.command(pass_context=True, brief='Define Linux/UNIX terminology', description='Define terms. Ex. `shadowbot define linux` Please use lowercase I am offended by capital latters.')
 async def define(ctx, arg = None):
     if arg:
-        f = open('terms/' + arg + '.txt', 'r')
+        f = open('terms/' + arg.lower() + '.txt', 'r')
         answer = f.read()
         f.seek(0)
         f.close()
 
-        if arg == 'red':
+        if arg.lower() == 'red':
             await ctx.send("The definition of Red Hat is: " + answer)
         else:
             await ctx.send("The definition of " + arg + " is: " + answer)
@@ -57,6 +57,7 @@ async def make(ctx, arg1 = None, arg2 = None):
             f = open('terms/' + arg1 + '.txt', 'w+')
             f.write(arg2)
             await ctx.send("k done.")
+            f.close()
         else:
             await ctx.send('You need to type a name and text for the file dumb.')
 
