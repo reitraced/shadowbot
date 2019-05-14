@@ -1,0 +1,1 @@
+A UNIX core utility, it reads out text files from within the command line.y
