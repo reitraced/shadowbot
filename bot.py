@@ -42,4 +42,14 @@ async def define(ctx, arg = None):
 async def define_error(ctx, error):
     await ctx.send('Could not recognize term')
 
+@client.command()
+async def make(ctx, arg1 = None, arg2 = None):
+    if ctx.message.author.id == 177169904376610816 or 291663444883800064:
+        if arg1 or arg2:
+            f = open('terms/' + arg1 + '.txt', 'w+')
+            f.write(arg2)
+            await ctx.send("k done.")
+        else:
+            await ctx.send('You need to type a name and text for the file dumb.')
+
 client.run(token)
