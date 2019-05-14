@@ -19,6 +19,14 @@ async def on_ready():
     print('We have logged in as {0.user}'.format(client))
     await client.change_presence(activity=discord.Game(name=lastgame))
 
+@client.command(pass_context=True, brief="Print info about bot", description='Same as defining shadowbot')
+async def about(ctx):
+    f = open('terms/shadowbot.txt', 'r')
+    about = f.read()
+    f.seek(0)
+    f.close()
+    await ctx.send(about)
+
 @client.command()
 async def ping(ctx):
     await ctx.send('Pong! {0}'.format(round(client.latency, 4)*1000) + ' ms')
