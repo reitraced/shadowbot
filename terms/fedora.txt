@@ -1,0 +1,1 @@
+Okay so once upon a time there was a distro called Red Hat Linux. It is now two distros, the community-made Fedora for consumers, and Red Hat Enterprise for well, enterprise. Fedora is usually seen as being at the bleeding edge of stable Linux. Did that statement make sense? No? Ok.

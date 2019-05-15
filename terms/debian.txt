@@ -1,0 +1,1 @@
+One of the earliest and most important Linux distributions, Debian, created by Ian Murdock in 1993 was named as a combination of his name and his then girlfriend (now ex-eife) Debra Lynn. It is still a mystery if she got the divorice over Linux or not. Oh and the base install of Debian is all free software, I guess that's cool.
