@@ -50,12 +50,12 @@ async def define(ctx, arg=None):
         else:
             await ctx.send("The definition of " + arg + " is: " + answer)
     else:
-        await ctx.send('You need to give me terms to define')
+        await ctx.send('You need to give me terms to define. Do \"shadowbot terms\" for a list')
 
 
 @define.error
 async def define_error(ctx, error):
-    await ctx.send('Could not recognize term')
+    await ctx.send('Could not recognize term. Do \"shadowbot terms\" for a list')
 
 
 @client.command()
