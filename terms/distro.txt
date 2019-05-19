@@ -1,0 +1,1 @@
+Short for distribution, a distro is a distribution of software. In this case It's refering to a flavor of Linux, e.g. Red Hat, Ubuntu, Arch, ect.
