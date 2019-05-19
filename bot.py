@@ -56,9 +56,21 @@ async def make(ctx, arg1 = None, arg2 = None):
         if arg1 or arg2:
             f = open('terms/' + arg1 + '.txt', 'w+')
             f.write(arg2)
-            await ctx.send("k done.")
             f.close()
+            f = open('terms.txt', 'a')
+            f.write("\n"+arg1)
+            f.close()
+            await ctx.send("k done.")
         else:
             await ctx.send('You need to type a name and text for the file dumb.')
+
+@client.command()
+async def terms(ctx):
+            f = open('terms.txt', 'r')
+            read = f.read()
+            a = ctx.message.author
+            await ctx.send("Check your DMs for the terms.")
+            await a.send("```"+read+'\n```')
+            f.close()
 
 client.run(token)
