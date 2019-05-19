@@ -66,7 +66,7 @@ async def make(ctx, arg1=None, arg2=None):
             f.write(arg2)
             f.close()
             f = open('terms.txt', 'a')
-            f.write("\n"+arg1)
+            f.write(", "+arg1)
             f.close()
             await ctx.send("k done.")
         else:
